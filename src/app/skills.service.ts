@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SkillsService {
-  private apiUrl = 'http://localhost:5000/api/skills';  
+  private apiUrl = 'https://portflio-backend-uiv7.onrender.com/api/skills';
 
   constructor(private http: HttpClient) { }
 

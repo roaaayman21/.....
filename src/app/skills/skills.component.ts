@@ -15,7 +15,7 @@ export class SkillsComponent implements OnInit {
     this.skillsService.getSkills().subscribe(
       (data: any[]) => {
         this.skills = data.map(skill => ({
-          icon: `http://localhost:5000/uploads/${skill.photo}`, 
+          icon: `https://portflio-backend-uiv7.onrender.com/uploads/${skill.photo}`,
           name: skill.name,
         }));
       },

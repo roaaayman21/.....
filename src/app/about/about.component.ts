@@ -22,7 +22,7 @@ export class AboutComponent implements OnInit {
   }
 
   getAboutData(): void {
-    this.http.get('http://localhost:5000/api/about').subscribe(
+    this.http.get('https://portflio-backend-uiv7.onrender.com/api/about').subscribe(
       (data: any) => {
         this.about = data;
       },
